@@ -22,7 +22,7 @@ const getHumanCHoice = function(){
 
     let human = prompt ("ESCOGE ENTRE : PIEDRA PAPEL O TIJERA")
     
-    return human;
+    return  human;
 
     
 
@@ -60,14 +60,79 @@ const playRound = function (choiceComputer,choiceHUman){
         return "Ohh habéis empatado nadie puntúa "
     }
 
+}
+
+const point = function(round ){
+    
+    if (round === "Felicidades has ganado esta ronda "){
+
+        return scoreHuman = scoreHuman+1;   
+
+    }else if (round === "La computadora gana") {
+
+        return scoreComputer = scoreComputer+1;
+
+    }
 
 }
 
 const choiceComputer = getComputerChoice(Math.random());
 const choiceHUman = getHumanCHoice().toLowerCase();
 const round = playRound(choiceComputer,choiceHUman);
+const score = point(round);
 console.log(choiceComputer);
 console.log(choiceHUman);
 console.log(round);
+console.log(scoreComputer,scoreHuman);
+/*
+getComputerChoice(Math.random());
+getHumanCHoice().toLowerCase();
+
+playRound(choiceComputer,choiceHUman);
+point(round);
+
+console.log(scoreComputer,scoreHuman);
+
+getComputerChoice(Math.random());
+getHumanCHoice().toLowerCase();
+
+playRound(choiceComputer,choiceHUman);
+point(round);
+
+console.log(scoreComputer,scoreHuman);
+
+getComputerChoice(Math.random());
+getHumanCHoice().toLowerCase();
+
+playRound(choiceComputer,choiceHUman);
+point(round);
+
+console.log(scoreComputer,scoreHuman);
+
+getComputerChoice(Math.random());
+getHumanCHoice().toLowerCase();
+
+playRound(choiceComputer,choiceHUman);
+point(round);
+
+console.log(scoreComputer,scoreHuman);
+
+getComputerChoice(Math.random());
+getHumanCHoice().toLowerCase();
+
+playRound(choiceComputer,choiceHUman);
+point(round);
+
+
+console.log(scoreComputer,scoreHuman);*/
+
+
+
+
+
+
+
+
+
 
 
